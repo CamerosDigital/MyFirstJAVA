@@ -1,0 +1,14 @@
+# Supabase (PostgreSQL) connection
+# Copy this file to application.properties and fill in your credentials
+spring.datasource.url=jdbc:postgresql://aws-0-<region>.pooler.supabase.com:5432/postgres?sslmode=require
+spring.datasource.username=postgres.<your-project-ref>
+spring.datasource.password=your_supabase_db_password
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# JPA / Hibernate
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+# App port
+server.port=8080
